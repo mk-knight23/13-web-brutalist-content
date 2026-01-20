@@ -58,7 +58,7 @@ function App() {
                                 {item}
                             </a>
                         ))}
-                        <button className="px-6 py-3 bg-slate-900 text-white font-black text-[10px] uppercase tracking-widest hover:bg-orange-600 transition-all active:scale-95 shadow-[4px_4px_0px_0px_rgba(234,88,12,1)]">
+                        <button className="px-6 py-3 bg-slate-900 text-white font-black text-[10px] uppercase tracking-widest hover:bg-orange-600 transition-all active:scale-95 shadow-brutalist-orange-small">
                             Subscribe
                         </button>
                     </div>
@@ -80,7 +80,7 @@ function App() {
                             A brutalist exploration of modern software architecture, aesthetic frontend development, and the future of distributed content systems.
                         </p>
                         <div className="flex gap-4">
-                            <button className="px-10 py-5 bg-slate-900 text-white font-black uppercase tracking-widest hover:bg-orange-600 transition-all shadow-[8px_8px_0px_0px_rgba(234,88,12,1)] flex items-center gap-3">
+                            <button className="px-10 py-5 bg-slate-900 text-white font-black uppercase tracking-widest hover:bg-orange-600 transition-all shadow-brutalist-orange flex items-center gap-3">
                                 Read Manifesto <ArrowUpRight className="w-5 h-5" />
                             </button>
                         </div>

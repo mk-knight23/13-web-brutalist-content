@@ -1,9 +1,14 @@
-# Project dependencies
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
-.cache/
-# Build directory
-public/
+node_modules/
+.next/
+.vercel/
+dist/
+build/
+coverage/
+*.log
+.env*
+package-lock.json
 .DS_Store
-.env
-.vercel
+Thumbs.db
+.Trash
+.cache/
+public/
