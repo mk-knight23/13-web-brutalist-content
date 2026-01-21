@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ea580c",
-        secondary: "#1f2937",
+        primary: "#f97316",
+        secondary: "#111827",
       },
       boxShadow: {
         'brutalist': '8px 8px 0px 0px rgba(0,0,0,1)',
