@@ -3,11 +3,11 @@
 ✨ Professional Repository Showcase Template
 
 ## Live Deployments
+- Netlify: https://18-gatsby-content-blog-mkazi.netlify.app
+- GitHub Pages: https://mk-knight23.github.io/18-gatsby-content-blog/
 
-- **GitHub Pages:** https://mk-knight23.github.io/18-gatsby-content-blog/
-- **Vercel:** https://18-gatsby-content-blog.vercel.app
-
-Status: 🟡 GH Pages Live | Vercel Pending (Daily Limit)
+Status: 🟢 Live
+Last Updated: 2026-01-21T14:23:00+05:30
 
 ## Features
 - 📱 Mobile Responsive
