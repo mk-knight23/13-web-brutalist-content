@@ -33,14 +33,14 @@ const POSTS = [
 
 function App() {
     return (
-        <div className="min-h-screen bg-white selection:bg-orange-500 selection:text-white">
+        <div className="min-h-screen bg-white selection:bg-orange-500 selection:text-white" role="application" aria-label="Industrial Content Blog">
             {/* Top Bar */}
-            <div className="bg-slate-900 py-3 px-6 text-center">
+            <div className="bg-slate-900 py-3 px-6 text-center" role="status" aria-live="polite">
                 <p className="text-[10px] font-black text-white uppercase tracking-[0.5em]">System Status: All Nodes Operational • v4.81.0</p>
             </div>
 
             {/* Navigation */}
-            <nav className="border-b-4 border-slate-900 sticky top-0 bg-white/90 backdrop-blur-md z-50">
+            <nav className="border-b-4 border-slate-900 sticky top-0 bg-white/90 backdrop-blur-md z-50" role="navigation" aria-label="Main navigation">
                 <div className="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
                     <div className="flex items-center gap-4">
                         <div className="w-14 h-14 bg-orange-500 border-4 border-slate-900 flex items-center justify-center -rotate-6 group cursor-pointer hover:rotate-0 transition-transform">
@@ -54,26 +54,26 @@ function App() {
 
                     <div className="hidden md:flex items-center gap-8">
                         {['Articles', 'Protocols', 'Laboratory', 'Manifesto'].map(item => (
-                            <a key={item} href="#" className="text-xs font-black uppercase tracking-[0.2em] text-slate-900 hover:text-orange-600 transition-colors underline decoration-4 decoration-transparent hover:decoration-orange-600 underline-offset-8">
+                            <a key={item} href="#" className="text-xs font-black uppercase tracking-[0.2em] text-slate-900 hover:text-orange-600 transition-colors underline decoration-4 decoration-transparent hover:decoration-orange-600 underline-offset-8" aria-label={`Navigate to ${item}`}>
                                 {item}
                             </a>
                         ))}
-                        <button className="px-6 py-3 bg-slate-900 text-white font-black text-[10px] uppercase tracking-widest hover:bg-orange-600 transition-all active:scale-95 shadow-brutalist-orange-small">
+                        <button className="px-6 py-3 bg-slate-900 text-white font-black text-[10px] uppercase tracking-widest hover:bg-orange-600 transition-all active:scale-95 shadow-brutalist-orange-small" aria-label="Subscribe to newsletter">
                             Subscribe
                         </button>
                     </div>
                 </div>
             </nav>
 
-            <main className="pt-20 pb-32">
+            <main className="pt-20 pb-32" role="main">
                 {/* Hero Section */}
-                <section className="max-w-7xl mx-auto px-6 mb-32">
+                <section className="max-w-7xl mx-auto px-6 mb-32" aria-labelledby="hero-heading">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         className="border-l-8 border-orange-500 pl-12"
                     >
-                        <h1 className="heading-xl mb-10">
+                        <h1 id="hero-heading" className="heading-xl mb-10">
                             Engineering <br /> <span className="text-slate-300">The Modern</span> <br /> Web Experience.
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-600 font-medium max-w-3xl leading-relaxed mb-12">
@@ -88,20 +88,21 @@ function App() {
                 </section>
 
                 {/* Categories Grid */}
-                <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-32">
+                <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-32" aria-labelledby="categories-heading">
+                    <h2 id="categories-heading" className="sr-only">Browse by Category</h2>
                     {['Frontend', 'Scalability', 'Aesthetics', 'Strategy'].map((cat, idx) => (
-                        <div key={cat} className="p-10 border-4 border-slate-900 text-center group cursor-pointer hover:bg-orange-500 transition-all">
+                        <button key={cat} className="p-10 border-4 border-slate-900 text-center group cursor-pointer hover:bg-orange-500 transition-all" aria-label={`Browse ${cat} articles`}>
                             <span className="text-sm font-black uppercase tracking-[0.3em] group-hover:text-white transition-colors">{cat}</span>
-                        </div>
+                        </button>
                     ))}
                 </section>
 
                 {/* Featured Content */}
-                <section className="max-w-7xl mx-auto px-6">
+                <section className="max-w-7xl mx-auto px-6" aria-labelledby="dispatches-heading">
                     <div className="flex justify-between items-end mb-16 border-b-4 border-slate-900 pb-8">
-                        <h2 className="text-4xl font-black uppercase tracking-tight">Recent <span className="text-slate-300 italic">Dispatches</span></h2>
+                        <h2 id="dispatches-heading" className="text-4xl font-black uppercase tracking-tight">Recent <span className="text-slate-300 italic">Dispatches</span></h2>
                         <div className="flex gap-4">
-                            <button className="p-4 bg-slate-100 border-2 border-slate-900 hover:bg-white transition-colors"><Search className="w-5 h-5" /></button>
+                            <button className="p-4 bg-slate-100 border-2 border-slate-900 hover:bg-white transition-colors" aria-label="Search articles"><Search className="w-5 h-5" /></button>
                         </div>
                     </div>
 
@@ -134,9 +135,9 @@ function App() {
 
                                 <div className="flex justify-between items-center pt-8 border-t-2 border-slate-100">
                                     <span className="flex items-center gap-1 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                                        <Clock className="w-3 h-3" /> {post.readTime}
+                                        <Clock className="w-3 h-3" aria-hidden="true" /> {post.readTime}
                                     </span>
-                                    <button className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-900 hover:text-orange-600 transition-colors">
+                                    <button className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-900 hover:text-orange-600 transition-colors" aria-label={`Read ${post.title}`}>
                                         Explore <ArrowRight className="w-4 h-4" />
                                     </button>
                                 </div>
@@ -147,7 +148,7 @@ function App() {
             </main>
 
             {/* Industrial Footer */}
-            <footer className="bg-slate-900 text-white py-24 border-t-[12px] border-orange-500">
+            <footer className="bg-slate-900 text-white py-24 border-t-[12px] border-orange-500" role="contentinfo">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
                     <div className="lg:col-span-2">
                         <div className="flex items-center gap-4 mb-10">
@@ -160,11 +161,15 @@ function App() {
                             Analyzing the digital landscape through the lens of industrial design and extreme software engineering.
                         </p>
                         <div className="flex gap-6">
-                            {[Github, Twitter, Linkedin].map((Icon, i) => (
-                                <button key={i} className="p-4 bg-white/5 border border-white/10 hover:bg-orange-500 hover:text-white transition-all rounded-xl">
-                                    <Icon className="w-6 h-6" />
-                                </button>
-                            ))}
+                            <button className="p-4 bg-white/5 border border-white/10 hover:bg-orange-500 hover:text-white transition-all rounded-xl" aria-label="Follow on GitHub">
+                                <Github className="w-6 h-6" />
+                            </button>
+                            <button className="p-4 bg-white/5 border border-white/10 hover:bg-orange-500 hover:text-white transition-all rounded-xl" aria-label="Follow on Twitter">
+                                <Twitter className="w-6 h-6" />
+                            </button>
+                            <button className="p-4 bg-white/5 border border-white/10 hover:bg-orange-500 hover:text-white transition-all rounded-xl" aria-label="Follow on LinkedIn">
+                                <Linkedin className="w-6 h-6" />
+                            </button>
                         </div>
                     </div>
 
@@ -172,7 +177,7 @@ function App() {
                         <h4 className="text-xs font-black uppercase tracking-[0.3em] mb-10 text-orange-500">Core Protocols</h4>
                         <ul className="space-y-6 text-sm font-bold uppercase tracking-widest">
                             {['Archive', 'Laboratory', 'Manifesto', 'Glossary'].map(l => (
-                                <li key={l}><a href="#" className="hover:text-orange-500 transition-colors">{l}</a></li>
+                                <li key={l}><a href="#" className="hover:text-orange-500 transition-colors" aria-label={`Navigate to ${l}`}>{l}</a></li>
                             ))}
                         </ul>
                     </div>
@@ -181,7 +186,7 @@ function App() {
                         <h4 className="text-xs font-black uppercase tracking-[0.3em] mb-10 text-orange-500">Support</h4>
                         <ul className="space-y-6 text-sm font-bold uppercase tracking-widest">
                             {['Transmission', 'Security', 'Privacy', 'Nodes'].map(l => (
-                                <li key={l}><a href="#" className="hover:text-orange-500 transition-colors">{l}</a></li>
+                                <li key={l}><a href="#" className="hover:text-orange-500 transition-colors" aria-label={`Navigate to ${l}`}>{l}</a></li>
                             ))}
                         </ul>
                     </div>
