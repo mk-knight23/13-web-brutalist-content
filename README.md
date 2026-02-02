@@ -1,4 +1,4 @@
-# Industrial Content Blog
+# Web Brutalist Content
 
 ✨ A modern, high-performance content platform optimized for developers. Featuring advanced markdown processing, sophisticated typography, and a lightning-fast React architecture.
 
@@ -28,7 +28,7 @@ npm run dev
 - [Deployment Guide](docs/DEPLOY.md)
 
 ## Live Deployment
-- **GitHub Pages**: [https://mk-knight23.github.io/industrial-content-blog/](https://mk-knight23.github.io/industrial-content-blog/)
+- **GitHub Pages**: [https://mk-knight23.github.io/13-web-brutalist-content/](https://mk-knight23.github.io/13-web-brutalist-content/)
 - **Status**: 🟢 Live
 - **Modernized**: 2026-02-02
 
@@ -37,8 +37,8 @@ npm run dev
 
 ## 🌐 Live Deployments
 
-- Vercel: https://industrial-content-blog.vercel.app
-- GitHub Pages: https://mk-knight23.github.io/industrial-content-blog/
+- Vercel: https://13-web-brutalist-content.vercel.app
+- GitHub Pages: https://mk-knight23.github.io/13-web-brutalist-content/
 
 Status: 🟢 Deployments Live
 Last Updated: 2026-02-02

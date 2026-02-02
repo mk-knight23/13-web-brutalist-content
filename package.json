@@ -1,5 +1,5 @@
 {
-  "name": "industrial-content-blog",
+  "name": "13-web-brutalist-content",
   "private": false,
   "version": "2.1.0",
   "description": "Premium industrial brutalist blog with React 19, Vite 6, and Tailwind CSS v4.",
@@ -25,9 +25,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mk-knight23/industrial-content-blog.git"
+    "url": "git+https://github.com/mk-knight23/13-web-brutalist-content.git"
   },
-  "homepage": "https://mk-knight23.github.io/industrial-content-blog/",
+  "homepage": "https://mk-knight23.github.io/13-web-brutalist-content/",
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.29.2",
