@@ -5,6 +5,19 @@
 ## 🚀 Live Demo
 **[View Live on Vercel](https://13-web-brutalist-content.vercel.app)**
 
+## 📦 Deployment
+
+### Render (One-Click Deploy)
+This repository includes a `render.yaml` blueprint for automated deployment:
+1. Visit [dashboard.render.com](https://dashboard.render.com)
+2. Click "New +" → "Blueprint"
+3. Connect repository: `mk-knight23/13-web-brutalist-content`
+4. Render will auto-detect and apply the blueprint configuration
+
+### Manual Deployment
+- **Build Command**: `npm run build`
+- **Publish Directory**: `dist`
+
 ## Features
 - ✍️ Professional Content Management & Markdown Support
 - 🎨 Sophisticated Typography & Layout Options
