@@ -1,60 +1,74 @@
 # 13 Web Brutalist Content
 
-✨ A modern, high-performance content platform optimized for developers. Featuring advanced markdown processing, sophisticated typography, and a lightning-fast React architecture.
+A modern, high-performance content platform optimized for developers. Featuring sophisticated typography, brutalist design aesthetics, and a lightning-fast React architecture.
 
-## 🚀 Live Demo
-**[View Live on Vercel](https://13-web-brutalist-content.vercel.app)**
+## Live Deployments
 
-## 📦 Deployment
+| Platform | URL | Status |
+|----------|-----|--------|
+| Vercel | https://13-web-brutalist-content.vercel.app | Active |
+| Render | https://13-web-brutalist-content.onrender.com | Active |
+| Firebase | https://web-brutalist-content.web.app | Active |
+| AWS Amplify | https://main.web-brutalist-content.amplifyapp.com | Active |
+| GitHub Pages | https://mk-knight23.github.io/13-web-brutalist-content/ | Active |
 
-### Render (One-Click Deploy)
-This repository includes a `render.yaml` blueprint for automated deployment:
-1. Visit [dashboard.render.com](https://dashboard.render.com)
-2. Click "New +" → "Blueprint"
-3. Connect repository: `mk-knight23/13-web-brutalist-content`
-4. Render will auto-detect and apply the blueprint configuration
-
-### Manual Deployment
-- **Build Command**: `npm run build`
-- **Publish Directory**: `dist`
-
-## Features
-- ✍️ Professional Content Management & Markdown Support
-- 🎨 Sophisticated Typography & Layout Options
-- 📱 Responsive Multi-Resolution Support
-- ⚛️ Engineered with React 19
-- ⚡ Lightning-Fast Build Pipeline via Vite 6
+Auto-deployed from GitHub main branch.
 
 ## Tech Stack
-- **Frontend**: React 19, Tailwind CSS v4
+
+- **Frontend**: React 19, TypeScript, Tailwind CSS v4
 - **Build Tool**: Vite 6
-- **Content**: Markdown & Static Data
 - **Icons**: Lucide React
 - **Animations**: Framer Motion
+- **Testing**: Vitest, React Testing Library
+
+## Features
+
+- Brutalist industrial design aesthetic
+- High-contrast typography and layout
+- Responsive multi-resolution support
+- Smooth animations with Framer Motion
+- Accessible UI with ARIA labels
+- Error boundary for graceful error handling
 
 ## Quick Start
+
 ```bash
 npm install
 npm run dev
 ```
 
-## Documentation
-- [Architecture Overview](docs/ARCHITECTURE.md)
-- [Design System](docs/DESIGN.md)
-- [Deployment Guide](docs/DEPLOY.md)
+## Build
 
-## Live Deployment
-- **GitHub Pages**: [https://mk-knight23.github.io/13-web-brutalist-content/](https://mk-knight23.github.io/13-web-brutalist-content/)
-- **Status**: 🟢 Live
-- **Modernized**: 2026-02-02
+```bash
+npm run build
+```
+
+## Deployment Configuration
+
+### Render
+- Blueprint: `render.yaml`
+- Build Command: `npm run build`
+- Publish Directory: `dist`
+
+### Firebase Hosting
+- Config: `firebase.json`
+- Run: `firebase deploy`
+
+### Vercel
+- Config: `vercel.json`
+- Framework: Vite
+
+### AWS Amplify
+- Config: `amplify.yml`
+- Build Directory: `dist`
+
+## Project Info
+
+- **Repository**: mk-knight23/13-web-brutalist-content
+- **License**: MIT
+- **Author**: Kazi Musharraf
 
 ---
-*Maintained by [Kazi Musharraf](https://github.com/mk-knight23)*
 
-## 🌐 Live Deployments
-
-- Vercel: https://13-web-brutalist-content.vercel.app
-- GitHub Pages: https://mk-knight23.github.io/13-web-brutalist-content/
-
-Status: 🟢 Deployments Live
-Last Updated: 2026-02-02
+Last Updated: 2026-02-03
