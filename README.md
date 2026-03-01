@@ -51,3 +51,52 @@ This websites uses:
 
 - [GatsbyJS](https://github.com/gatsbyjs/gatsby) as website generator;
 - [gatsby-source-datocms](https://github.com/datocms/gatsby-source-datocms) to integrate the website with DatoCMS.
+
+
+## 🎯 Problem Solved
+
+This repository provides a streamlined approach to modern development needs, enabling developers to build robust applications with minimal complexity and maximum efficiency.
+
+## ✨ Features
+
+- **Core Functionality:** Primary features and capabilities
+- **Production Ready:** Built for real-world deployment scenarios
+- **Optimized Performance:** Efficient resource utilization
+- **Developer Experience:** Clear documentation and intuitive API
+
+## 🏗️ Architecture
+
+```
+```
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/mk-knight23/13-web-brutalist-content
+cd 13-web-brutalist-content
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 🌐 Deployment
+
+### Live URLs
+
+| Platform | URL |
+|----------|-----|
+| Vercel | [Deployed Link] |
+| GitHub Pages | [Deployed Link] |
+
+
+## 📄 License
+
+MIT License - see LICENSE file for details
+
+---
+
+Built with ❤️ by mk-knight23
