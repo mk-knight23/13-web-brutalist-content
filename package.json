@@ -27,6 +27,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "production": "npm run build && npm start",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write .",
